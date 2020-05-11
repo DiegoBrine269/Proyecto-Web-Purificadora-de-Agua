@@ -409,6 +409,7 @@ p.slogan {
     font-size: 4rem;
     border-top: 3px solid #0e233d;
     border-bottom: 3px solid #0e233d;
+    color: #0e233d;
 }
 
 @media (min-width: 768px) {
