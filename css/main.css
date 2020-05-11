@@ -320,6 +320,8 @@ img {
     padding: 1rem 2rem;
     border-radius: 1rem;
     font-size: 2rem;
+    display: inline-block;
+    margin-top: 2rem;
 }
 
 
@@ -385,4 +387,49 @@ img {
     .contenido-header h1 {
         font-size: 8vw;
     }
+}
+
+p.slogan {
+    margin: 0;
+    line-height: 1.3;
+}
+
+
+/** Secciones **/
+
+.seccion {
+    margin-top: 5rem;
+}
+
+.seccion h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    border-top: 3px solid #0e233d;
+    border-bottom: 3px solid #0e233d;
+}
+
+@media (min-width: 768px) {
+    .contenido-seccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.texto-seccion {
+    font-size: 2rem;
+    display: block;
+    margin: auto 0;
+}
+
+.imagen-seccion {
+    margin: auto 0;
+}
+
+.icono-whatsapp {
+    font-size: 20rem;
+    text-align: center;
+    color: green;
 }
