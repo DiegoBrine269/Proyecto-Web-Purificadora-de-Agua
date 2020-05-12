@@ -416,6 +416,7 @@ p.slogan {
     .contenido-seccion {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
     }
 }
 
@@ -427,6 +428,17 @@ p.slogan {
 
 .imagen-seccion {
     margin: auto 0;
+}
+
+.texto-contacto {
+    text-align: center;
+}
+
+.numero-telefonico {
+    color: #0e233d;
+    font-weight: 700;
+    font-size: 4rem;
+    text-decoration: underline;
 }
 
 .icono-whatsapp {
