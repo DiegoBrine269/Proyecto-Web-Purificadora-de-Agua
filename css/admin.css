@@ -3,20 +3,29 @@ div.cabecera {
 }
 
 .cabecera h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin: 2rem 0 0 0;
     line-height: 1;
 }
 
 .cabecera p {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 .contenedor-login {
     background-color: #0e233d;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     border-radius: 0.8rem;
     margin-top: 2rem;
+    height: 30rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-login {
+        width: 60%;
+        margin: 4rem auto;
+    }
 }
 
 .caja-de-texto {

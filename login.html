@@ -18,13 +18,15 @@
         <p>Sistema de Gestión</p>
     </div>
 
-    <div class="contenedor">
+    <main class="contenedor">
         <div class="contenedor-login">
-            <input class="caja-de-texto" type="text" name="" id="nombre-email" placeholder="Nombre de usuario o correo electrónico">
-            <input class="caja-de-texto" type="text" name="" id="nombre-email" placeholder="Nombre de usuario o correo electrónico">
-            <input type="submit" value="Iniciar Sesión" class="boton boton-login">
+            <form action="">
+                <input required class="caja-de-texto" type="text" name="" id="nombre-email" placeholder="Nombre de usuario o correo electrónico">
+                <input required class="caja-de-texto" type="password" name="" id="pass" placeholder="Contraseña">
+                <input onClick="parent.open('index.html')" type="submit" value="Iniciar Sesión" class="boton boton-login">
+            </form>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
