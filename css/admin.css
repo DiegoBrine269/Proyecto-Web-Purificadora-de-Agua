@@ -152,5 +152,10 @@ div.cabecera {
     color: white;
     margin: 0;
     font-size: 1.5rem;
-    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .texto-boton {
+        font-size: 1.5rem;
+    }
 }
