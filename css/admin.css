@@ -37,6 +37,7 @@ div.cabecera {
     margin-bottom: 1.5rem;
     border-radius: 0.8rem;
     border: none;
+    background-color: #e8e8e8;
 }
 
 .boton-login {
@@ -92,7 +93,7 @@ div.cabecera {
 .contenedor-botones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 8rem 2rem;
+    margin: 5rem 2rem;
     grid-gap: 3rem;
 }
 
@@ -110,12 +111,21 @@ div.cabecera {
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.contenedor-boton:hover {
+    cursor: pointer;
+    scale: 1.1;
+    -webkit-box-shadow: 10px 10px 34px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 34px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 34px -8px rgba(0, 0, 0, 0.75);
 }
 
 @media (min-width: 480px) {
     .contenedor-boton {
-        width: 40vw;
-        height: 40vw;
+        width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -123,6 +133,13 @@ div.cabecera {
     .contenedor-boton {
         width: 20vw;
         height: 20vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor-boton {
+        width: 17vw;
+        height: 17vw;
     }
 }
 
@@ -135,22 +152,5 @@ div.cabecera {
     color: white;
     margin: 0;
     font-size: 1.5rem;
-}
-
-@media (min-width: 480px) {
-    .texto-boton {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .texto-boton {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .texto-boton {
-        font-size: 2.5rem;
-    }
+    font-size: 2rem;
 }
