@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 
     <meta name="theme-color" content="#fafafa">
@@ -21,68 +22,99 @@
 
 <body>
 
-    <header class="site-header">
-        <nav class="navegacion">
-            <a href="index.html">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-        <div class="contenedor contenido-header">
-            <div><a class="enlace" href="login.html">Clic aquí si eres administrador</a></div>
-            <div>
-                <h1>Purificadora El Jordán</h1>
-                <p class="slogan">¿Tienes sed? <span class="sub-slogan">Ven con nosotros.</span></p>
-                <a class="boton" href="#">Comprar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="  position: fixed; top: 0; width: 100%;">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Navbar text with an inline element
+          </span>
+        </div>
+      </nav>
+
+    <!-- The video -->
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="img/bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-1">Purificadora El Jordán</h1>
+              <p class="h1">¿Tienes sed? Ven con nosotros.</p>
+              <a href="compra.html" class="btn btn-primary" style="font-size: 2rem;">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <main class="mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            Higiene
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
-    </header>
 
-    <main>
-        <section class="seccion" id="nosotros">
-            <h2>Nosotros</h2>
-            <div class="contenido-seccion contenedor">
-                <div class="texto-seccion">
-                    <p>
-                        Somos una compañía joven, que desde Febrero de 2019 ha crecido exponencialmente. Nuestra purificadora fue fundada con el objetivo de suplir las necesidades de agua de calidad que nuestra colonia necesitaba.
-                    </p>
-                    <p>
-                        Nuestro compromiso con la gente ha sido siempre dar un servicio de alta calidad.
-                    </p>
-                </div>
-                <div class="imagen-seccion"><img class="imagen-seccion" src="/img/nosotros.jpg" alt=""></div>
-            </div>
-        </section>
 
-        <section class="seccion" id="servicios">
-            <h2>Servicios</h2>
-            <div class="contenido-seccion contenedor">
-                <div class="texto-seccion">
-                    <p>
-                        Los precios de nuestra agua son muy competentes y accesibles, costando así, $10 el garrafón de 20 litros. Además de nuestra calidad de agua, tenemos servicio de entrega a domicilio, el cual cuesta tan sólo $1. Nuestra ruta logística es muy amplia y cubrimos
-                        gran parte de la zona.
-                    </p>
-                    <p>
-                        Además de ello, contamos con nuestra gran promoción de 3x2 los días miércoles, que sin lugar a dudas es una gran opción para muchas personas.
-                    </p>
-                </div>
-                <div class="imagen-seccion"><img src="/img/servicios.jpg" alt=""></div>
-            </div>
-        </section>
 
-        <section class="seccion" id="contacto">
-            <h2>Contacto</h2>
-            <div class="contenido-seccion contenedor">
-                <div class="texto-seccion">
-                    <p class="texto-contacto">
-                        <p>No dudes en contactarnos vía telefónica o WhatsApp al</p> <span class="numero-telefonico">55 6186 6187</span>
-                    </p>
-                </div>
-                <div class="imagen-seccion icono-whatsapp"><i class="fab fa-whatsapp"></i></div>
-            </div>
-        </section>
     </main>
-
 
 
 
@@ -94,7 +126,9 @@
   <![endif]-->
 
     <!-- Add your site or application content here -->
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
